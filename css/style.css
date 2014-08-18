@@ -38,6 +38,10 @@ input[type=text]:focus {
   outline: 0;
 }
 
+input.error, input:focus.error {
+  border: 1px solid #d12b24;
+}
+
 table {
   border: 0;
   margin: 20px auto;
@@ -126,6 +130,14 @@ th {
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+}
+
+.spinner.ng-enter,
+.spinner.ng-leave {
+    -webkit-transition:0s linear all;
+    -moz-transition:0s linear all;
+    -o-transition:0s linear all;
+    transition:0s linear all;
 }
 
 @-webkit-keyframes spinnerRotate {
