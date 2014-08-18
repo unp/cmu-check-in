@@ -1,7 +1,7 @@
 var checkinApp = angular.module('checkinApp', ["angular-growl"]);
 
 checkinApp.config(['growlProvider', function(growlProvider) {
-  //growlProvider.globalTimeToLive(5000);
+  growlProvider.globalTimeToLive(5000);
 }]);
 
 checkinApp.controller('CheckInCtrl', ['$scope', '$http', '$timeout', 'growl',
