@@ -1,0 +1,154 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #efefef;
+  font-family: "Open Sans", "HelveticaNeue", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 2em;
+}
+
+input[type=submit] {
+  width: 100%;
+}
+
+input[type=text] {
+  border: 1px solid #d9d9d9;
+  border-radius: 0;
+  font-size: 1em;
+  padding: 1em 0.8em;
+  resize: none;
+  width: 100%;
+}
+
+input[type=text]:focus {
+  border: 1px solid #45b748;
+  outline: 0;
+}
+
+table {
+  border: 0;
+  margin: 20px auto;
+  width: 100%;
+}
+
+td, th {
+  padding: 10px;
+  text-align: left;
+}
+
+tr:nth-child(2n) {
+  background: #f7f7f7;
+}
+
+th {
+  border-bottom: 1px solid #d9d9d9;
+  font-weight: bold;
+}
+
+#check_in {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#container {
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 3px #d9d9d9;
+  -moz-box-shadow: 0 1px 3px #d9d9d9;
+  box-shadow: 0 1px 3px #d9d9d9;
+  margin: 40px auto;
+  padding: 40px;
+  position: relative;
+  width: 960px;
+}
+
+.btn {
+  background: #45b748;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  height: auto;
+  outline: none;
+  padding: 1em 2em;
+  text-decoration: none;
+  -webkit-appearance: none; /* prevents safari mobile from overriding buton styling */
+  transition: background .25s ease-in-out;
+  -moz-transition: background .25s ease-in-out;
+  -webkit-transition: background .25s ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+  background: #2d7e2f;
+}
+
+.btn:active {
+  background: #1f5921;
+}
+
+.btn:disabled {
+  background: #666;
+}
+
+.field {
+  position: relative;
+}
+
+.spinner {
+  position: absolute;
+  top: 1.8em;
+  right: 1em;
+  display: inline-block;
+  margin: -10px 0 0 -10px;
+  height: 20px;
+  width: 20px;
+  text-indent: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 1000;
+  -webkit-mask-image: url('../img/spinner.png');
+  background-color: #333;
+  -webkit-animation-name: spinnerRotate;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spinnerRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+::-webkit-input-placeholder {
+  font-weight: 300;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-weight: 300;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-weight: 300;
+}
+
+:-ms-input-placeholder {  
+  font-weight: 300;
+}

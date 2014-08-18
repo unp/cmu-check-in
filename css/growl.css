@@ -1,0 +1,127 @@
+.growl {
+    position: absolute;
+    top: calc(20px + 1em);
+    right:-4px;
+    width:30%;
+    z-index:100000;
+}
+
+.growl-item.ng-enter,
+.growl-item.ng-leave {
+    -webkit-transition:0.5s linear all;
+    -moz-transition:0.5s linear all;
+    -o-transition:0.5s linear all;
+    transition:0.5s linear all;
+}
+
+.growl-item {
+  -webkit-box-shadow: 0 1px 3px #d9d9d9;
+  -moz-box-shadow: 0 1px 3px #d9d9d9;
+  box-shadow: 0 1px 3px #d9d9d9;
+  margin-bottom: 18px;
+}
+
+.growl-item.ng-enter,
+.growl-item.ng-leave.ng-leave-active {
+    opacity:0;
+}
+.growl-item.ng-leave,
+.growl-item.ng-enter.ng-enter-active {
+    opacity:1;
+}
+
+.alert {
+  padding: 15px;
+  padding-right:3em;
+  color: #FFF;
+}
+
+.alert button {
+  float:right;
+  height:2em;
+  width:2em;
+  border:none;
+  outline:none;
+  border-radius:1em;
+  margin-right:-3em;
+  margin-top:-0.2em;
+  background:rgba(0,0,0,0.2);
+  color:rgba(255,255,255,0.7);
+  -webkit-transition:0.5s ease-out all;
+  -moz-transition:0.5s ease-out all;
+  -o-transition:0.5s ease-out all;
+  transition:0.5s ease-out all;
+}
+
+.alert button:hover, button:active {
+  -webkit-transition:0.5s ease-out all;
+  -moz-transition:0.5s ease-out all;
+  -o-transition:0.5s ease-out all;
+  transition:0.5s ease-out all;
+  background:rgba(0,0,0,0.3);
+  color:rgba(255,255,255,0.9);
+  outline:none;
+}
+
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.alert .alert-link {
+  font-weight: bold;
+}
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+.alert > p + p {
+  margin-top: 5px;
+}
+.alert-dismissable {
+  padding-right: 35px;
+}
+.alert-dismissable .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+.alert-success {
+  background-color: #45b748;
+}
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+  color: #2b542c;
+}
+.alert-info {
+  background-color: #4A90E2;
+  border-color: #bce8f1;
+}
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+.alert-info .alert-link {
+  color: #245269;
+}
+.alert-warning {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
+}
+.alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+.alert-warning .alert-link {
+  color: #66512c;
+}
+.alert-danger {
+  background-color: #D12B24;
+}
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+.alert-danger .alert-link {
+  color: #843534;
+}
