@@ -10,6 +10,12 @@ function($scope, $http, $timeout, growl) {
   $scope.checkIns = [];
   $scope.processing = false;
   
+  $scope.getSemester = function() {
+    var today = new Date();
+    var season = today.getMonth() < 7 ? "Spring" : "Fall";
+    return season + ' ' + today.getFullYear();
+  }
+  
   $scope.addCheckIn = function() {
     $scope.processing = true;
     $http({
