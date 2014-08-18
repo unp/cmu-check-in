@@ -8,6 +8,7 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' 
         rel='stylesheet' type='text/css'>
   <script src="js/angular.min.js"></script>
+  <script src="js/angular-animate.min.js"></script>
   <script src="js/angular-growl.js"></script>
   <script src="js/app.js"></script>
 </head>
@@ -22,7 +23,7 @@
                autocorrect="off" spellcheck="false" id="andrew_id" />
         <span class="spinner" ng-if="processing"></span>
       </div>
-      <input type="submit" value="Check In" class="btn"
+      <input type="submit" value="{{processing ? 'Checking in...' : 'Check In'}}" class="btn"
              ng-disabled="processing" />
     </form>
     <table ng-if="checkIns.length > 0">
