@@ -1,5 +1,7 @@
 <?php
 
+print_r($_ENV);
+
 $andrew_id = $_GET["andrew_id"];
 
 $ldapServerLocation = "ldap.andrew.cmu.edu";
@@ -26,7 +28,7 @@ if ($ds) {
       $response["grad_class"] = $student["cmustudentclass"][0];
       echo json_encode($response);
       
-      saveResponse($response);
+      // saveResponse($response);
       
     }
     else {
