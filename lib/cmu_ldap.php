@@ -1,7 +1,5 @@
 <?php
 
-print_r($_ENV);
-
 $andrew_id = $_GET["andrew_id"];
 
 $ldapServerLocation = "ldap.andrew.cmu.edu";
